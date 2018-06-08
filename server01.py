@@ -8,7 +8,7 @@ import thread              #引入thread模块内的函数
 def tcplink(skt,addr):            
     print(skt)
     print("Connect by...",addr)         #显示连接状态
-    print('Start receiving file')      #开始传输数据
+    print('Start sendinging file')      #开始传输文件
     with open('./ww.jpg', 'rb') as f:    #以二进制读的方式打开文件
         for data in f:       
             print(data)            #输出文件中的数据
